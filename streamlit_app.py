@@ -4,7 +4,7 @@ import openai
 from pinecone import Pinecone
 
 
-openapikey = st.secrets["OPENAIKEY"]
+openapikey = st.secrets["OPENAPIKEY"]
 print(openapikey)
 # Initialize Pinecone client
 pc = Pinecone(api_key="10c85a4c-db09-45a6-93dd-2e302ba1b7cb")
