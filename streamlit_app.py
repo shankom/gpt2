@@ -48,7 +48,7 @@ def get_chat_completion(user_query):
 
 # Streamlit UI
 st.title("Bhagwad Gita Query Assistant")
-
+st.image('wp2768270.jpg',caption='Lord Krishna')
 user_query = st.text_input("Enter your query:", "")
 if user_query:
     with st.spinner('Getting response...'):
