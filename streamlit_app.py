@@ -40,14 +40,14 @@ def get_chat_completion(user_query):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a helpful assistant which replies so kids can understand spirtal text"},
             {"role": "user", "content": full_context}
         ]
     )
     return response.choices[0].message['content'] if response.choices else "No response generated."
 
 # Streamlit UI
-st.title("Knowledge Base Query Assistant")
+st.title("Bhagwad Gita Query Assistant")
 
 user_query = st.text_input("Enter your query:", "")
 if user_query:
