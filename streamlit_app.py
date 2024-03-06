@@ -35,7 +35,7 @@ def get_relevant_kb_entries(query):
 def get_chat_completion(user_query):
     relevant_kb_entries = get_relevant_kb_entries(user_query)
     context = "\n".join(relevant_kb_entries)
-    full_context = f"The following information from the knowledge base is relevant:\n{context}\n\n{user_query}"
+    full_context = f"The following information from the knowledge base is relevant in simple language for kids:\n{context}\n\n{user_query}"
     
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
